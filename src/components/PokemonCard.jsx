@@ -1,19 +1,6 @@
 import styles from "./PokemonCard.module.css";
 
-const pokemonList = [
-  {
-    name: "bulbasaur",
-
-    imgSrc:
-      "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/1.png",
-  },
-
-  {
-    name: "mew",
-  },
-];
-
-function PokemonCard() {
+function PokemonCard({ pokemon }) {
   const card = {
     width: "200px",
     padding: "1rem",
@@ -25,8 +12,6 @@ function PokemonCard() {
     textAlign: "center",
     textShadow: "0px 0px 5px gray",
   };
-
-  const pokemon = pokemonList[0];
 
   return (
     <div>

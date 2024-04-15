@@ -30,6 +30,6 @@ const pokemonList = [
     {
       name: "mew",
     },
-  ];
+  ]
 
   export default pokemonList

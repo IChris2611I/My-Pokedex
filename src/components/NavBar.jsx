@@ -1,13 +1,13 @@
-import React from 'react';
-import Button from './Button';
-
-const NavBar = ({ pokemonIndex, PreviousButton, NextButton }) => {
+const NavBar = ({ pokemonList, setPokemonIndex }) => {
   return (
     <div>
-      {pokemonIndex > 0 && <Button onClick={PreviousButton}>Précédent</Button>}
-      {pokemonIndex < 4 && <Button onClick={NextButton}>Suivant</Button>}
+      {pokemonList.map((pokemon, index) => (
+        <button key={index} onClick={() => setPokemonIndex(index)}>
+          {pokemon.name}
+        </button>
+      ))}
     </div>
-  );
+  )
 }
 
-export default NavBar;
+export default NavBar

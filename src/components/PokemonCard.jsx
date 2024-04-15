@@ -1,5 +1,5 @@
-import PropTypes from "prop-types";
-import "../App.css";
+import PropTypes from "prop-types"
+import "../App.css"
 
 
 function PokemonCard({ pokemon }) {
@@ -15,7 +15,7 @@ function PokemonCard({ pokemon }) {
         <figcaption>{pokemon.name}</figcaption>
       </figure>
 
-      <figure className="card-charmander">
+      {/* <figure className="card-charmander">
         <img
           className="img"
           src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/4.png"
@@ -31,9 +31,9 @@ function PokemonCard({ pokemon }) {
           alt="squirtle"
         />
         <figcaption>squirtle</figcaption>
-      </figure>
+      </figure> */}
     </div>
-  );
+  )
 }
 
 PokemonCard.propTypes = {
@@ -42,6 +42,6 @@ PokemonCard.propTypes = {
   imgSrc: PropTypes.string.isRequired,
   
   }).isRequired,
-};
+}
 
-export default PokemonCard;
+export default PokemonCard
